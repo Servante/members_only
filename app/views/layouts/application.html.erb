@@ -11,10 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
-
-    <p class="notice"><%= notice %></p>
+    <main class="container">
+      <div class="header">
+        <%= link_to "Home", root_path %>
+      </div>
+      <div class="left panel">
+        <%= render "users/user_controls" %>
+      </div>
+      <div class="center panel">
+        <%= yield %>
+      </div>
+      <div class="right panel">
+      <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-
+      </div>
+    </main>        
   </body>
 </html>

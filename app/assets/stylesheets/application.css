@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+ html, body {
+  margin: 0px;
+  height: 100%;
+  background-color: black
+ }
+
+ .header {
+  height: 200px;
+  width: 100%;
+  background-color: darkorange
+ }
+
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 35px 0 35px;
+  height: 100%;
+  background-color: purple
+ }
+
+ .panel {
+  flex-grow: 1;
+  height: 100%;
+  width: 100px
+ }
+
+ .left {  
+  background-color: hotpink
+ }
+
+ .center {
+  flex-grow: 3;
+  background-color: teal
+ }
+
+ .right {
+  background-color: blue
+   }
