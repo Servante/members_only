@@ -2,7 +2,11 @@
 
 <p><%= @post.body %></p>
 
-<%= link_to "Delete", post_path(@post), data: {
-  turbo_method: :delete, 
-  turbo_confirm: "Are you sure you want to delete this post?"
-}%>
+
+<% if current_user.id == @post.user_id %>
+  <ul>
+    <li><%= link_to "Edit", edit_post_path(@post) %></li>
+    <li><%= link_to "Delete", post_path(@post), data: {
+    turbo_method: :delete, 
+    turbo_confirm: "Are you sure you want to delete this post?"}%></li>
+<% end %>
