@@ -2,8 +2,11 @@
 
 <p><%= @post.body %></p>
 
+<div class="signature">
+  <%= user_signed_in? ? @post.user.username : "anonymous"  %>
+</div>
 
-<% if current_user.id == @post.user_id %>
+<% if user_signed_in? && current_user.id == @post.user_id %>
   <ul>
     <li><%= link_to "Edit", edit_post_path(@post) %></li>
     <li><%= link_to "Delete", post_path(@post), data: {
