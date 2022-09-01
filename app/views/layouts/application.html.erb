@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MembersOnly</title>
+    <title>Members-Only</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,7 +13,9 @@
   <body>
     <main class="container">
       <div class="header">
-        <%= link_to "Home", root_path %>
+        <div class="home-link">
+          <%= link_to "Members-Only", root_path %>
+        </div>
       </div>
       <div class="left panel">
         <%= render "posts/user_controls" %>

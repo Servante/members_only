@@ -16,13 +16,25 @@
  html, body {
   margin: 0px;
   height: 100%;
-  background-color: black
+  background-color: black;
  }
 
  .header {
   height: 200px;
   width: 100%;
-  background-color: black
+  background-color: black;
+  text-align: center
+ }
+
+ .home-link {
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 80px;
+ }
+
+ .home-link a {
+  color: gold;
+  font-weight: 600
  }
 
  .container {
