@@ -1,15 +1,15 @@
-<h1><%= @post.title %></h1>
+<div class="show-body">
+  <div class="title"><h1><%= @post.title.titleize %></h1></div>
 
-<p><%= @post.body %></p>
+  <div class="post-body"><p><%= @post.body %></p></div>
 
-<div class="signature">
-  <%= user_signed_in? ? @post.user.username : "anonymous"  %>
+  <div class="signature"><%= render "signature", post: @post %></div>
+
+  <% if user_signed_in? && current_user.id == @post.user_id %>
+    <ul class="user-controls">
+      <li class="action"><%= link_to "Edit", edit_post_path(@post) %></li>
+      <li class="action"><%= link_to "Delete", post_path(@post), data: {
+      turbo_method: :delete, 
+      turbo_confirm: "Are you sure you want to delete this post?"}%></li>
+  <% end %>
 </div>
-
-<% if user_signed_in? && current_user.id == @post.user_id %>
-  <ul>
-    <li><%= link_to "Edit", edit_post_path(@post) %></li>
-    <li><%= link_to "Delete", post_path(@post), data: {
-    turbo_method: :delete, 
-    turbo_confirm: "Are you sure you want to delete this post?"}%></li>
-<% end %>

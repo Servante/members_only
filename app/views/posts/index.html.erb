@@ -1,15 +1,14 @@
 <div class="index-body">
-  <div class="index-h"><h1>Posts</h1></div>
+  <div class="h"><h1>Posts</h1></div>
 
   <ul>
     <% @posts.each do |post| %>
       <li>
         <a><%= link_to post.title.titleize, post %></a><br><br>
-        <div class="index-pbody"><%= post.body %></div><br>
-        <div class="index-signature">
-          <%= user_signed_in? ? "author: #{post.user.username.titleize}" : "author: anonymous"%>
-        </div><br><br>
+        <div class="post-body"><%= post.body %></div><br>
       </li>
+      <div class="signature"><%= render "signature", post: post %></div><br><br>
     <% end %>
+
   </ul>
 </div>

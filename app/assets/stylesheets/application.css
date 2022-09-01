@@ -22,7 +22,7 @@
  .header {
   height: 200px;
   width: 100%;
-  background-color: darkorange
+  background-color: black
  }
 
  .container {
@@ -40,7 +40,7 @@
  }
 
  .left {  
-  background-color: hotpink
+  background-color: black
  }
 
  .center {
@@ -49,31 +49,103 @@
  }
 
  .right {
-  background-color: blue
+  background-color: black
  }
 
- .index-body {
+ .body {
   display: flex;
   flex-direction: column;
   justify-content: center
  }
 
- .index-h {
+ .h {
   color: yellow;
   text-align: center
  }
  
- .index-body a {
+.index-body a {
   color: magenta;
   font-size: 24px;
   text-decoration: none
  }
 
- .index-body .index-pbody {
-  color: lightblue
+ a {
+  text-decoration: none
  }
 
- .index-signature {
+ .post-body {
+  color: lightblue;
+ }
+
+ .signature {
   color: orange;
   align-items: right
+ }
+
+ /** show page **/
+
+ .title {
+  color: magenta;
+  font-size: 24px;
+ }
+
+ .show-body {
+  padding: 24px
+ }
+
+ .user-controls {
+  display: flex;
+  width: 90px;
+  padding: 0;
+  text-decoration: none;
+  justify-content: space-between
+ }
+
+ .action a {
+  color: yellow
+ }
+
+ .edit-body,
+ .new-body,
+ .login-body,
+ .signup-body {
+  text-align: center
+ }
+
+ .form {
+  display: inline-block
+ }
+
+ .form-title,
+ .form-body {
+  color: magenta;
+  padding: 20px
+ }
+
+ .login-body .field,
+ .signup-body .field {
+  padding: 10px;
+ }
+
+ .shared-links a {
+  color: orange
+ }
+
+ .notice {
+  color: hotpink
+ }
+
+ .sign-in {
+  color: orange
+ }
+
+ .link a,
+ .current-user{
+  color: orange;
+  list-style: none;
+  padding: 10px 0 10px 0
+ }
+
+ .button {
+  margin-top: 10px
  }
