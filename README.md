@@ -1,24 +1,31 @@
-# README
+#Members-Only 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A basic Ruby on Rails application demonstrating knowledge of authentication and utilizing the Devise gem. 
 
-Things you may want to cover:
+Users will be able to:
 
-* Ruby version
+* create an account 
 
-* System dependencies
+* create new posts
 
-* Configuration
+* edit or delete their own posts
 
-* Database creation
+* see the author of other posts
 
-* Database initialization
+You don't have to be signed in to read the posts, but you do if you want to see the author's name. 
 
-* How to run the test suite
+---------------------------------------
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+This was a project completed for [The Odin Project's](https://www.theodinproject.com/) Ruby on Rails course. See the project details [here](https://www.theodinproject.com/lessons/ruby-on-rails-members-only). 
 
-* ...
+
+Created with:
+
+Ruby 3.1.2
+
+Rails 7.0.3.1
+
+Additional Gems: Devise 4.8.1
+
+Database: Postgresql
