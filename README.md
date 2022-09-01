@@ -1,4 +1,4 @@
-#Members-Only 
+# Members-Only 
 
 A basic Ruby on Rails application demonstrating knowledge of authentication and utilizing the Devise gem. 
 
