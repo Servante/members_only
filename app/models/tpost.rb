@@ -1,0 +1,2 @@
+class Tpost < ApplicationRecord
+end

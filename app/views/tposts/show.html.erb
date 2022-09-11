@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tpost %>
+
+<div>
+  <%= link_to "Edit this tpost", edit_tpost_path(@tpost) %> |
+  <%= link_to "Back to tposts", tposts_path %>
+
+  <%= button_to "Destroy this tpost", @tpost, method: :delete %>
+</div>
