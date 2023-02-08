@@ -1,7 +1,7 @@
 <div class="user-controls-links">
   <% if user_signed_in? %>
     <ul>
-      <div class="current-user"><li><%= "Signed in as: #{current_user.username}" %></li></div>
+      <div class="current-user"><li><%= "#{current_user.username}" %></li></div>
       <div class="link"><li><%= link_to "Create New Post", new_post_path %></li></div>
       <div class="button"><li><%= button_to "Sign out", destroy_user_session_path, method: :delete %></li></div>
     </ul>
